@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma página para codificar e decodificar mensagens.">
+    <meta name="keywords" content="criptografia, decodificação, Alura, web">
+    <meta name="author" content="Yuri Facchinello">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo__Alura" src="./assets/Logo_alura.png" alt="Logo da Alura" loading="lazy">
+    </header>
+    <main class="conteudo">
+        <section class="esquerda">
+            <div class="secao__mensagem">
+                <label for="mensagem">Digite seu texto:</label>
+                <textarea id="mensagem" class="mensagem__texto" cols="41" rows="4" maxlength="300" placeholder="Digite seu texto"></textarea>
+
+                <div class="mensagem__informacao">
+                    <img src="./assets/exclamacao.png" alt="sinal de exclamacao">
+                    <span>Apenas letras minúsculas e sem acento.</span>
+                </div>
+
+                <div class="conteudo__botao">
+                    <button id="btn-encriptar" class="btn estilo-um">Criptografar</button>
+                    <button id="btn-desencriptar" class="btn estilo-dois">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="direita">
+            <div class="secao__resposta">
+                <textarea id="resposta" class="resposta__texto__escondido" cols="20" rows="9" readonly></textarea>
+                <img src="./assets/foto_mulher.png" alt="imagem de uma mulher azul segurando uma lupa" class="imagem__mulher">
+                <p class="resposta__alerta__visivel">Nenhuma mensagem encontrada</p>
+                <p class="resposta__subtext__visivel">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                
+                <div class="conteudo__botao__escondido" id="btn-copiar-container">
+                    <button id="btn-copiar" class="btn estilo-dois">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Yuri Facchinello</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
